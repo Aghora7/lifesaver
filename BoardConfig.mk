@@ -105,6 +105,9 @@ TARGET_TS_MAKEUP := true
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
+# Media
+TARGET_USES_MEDIA_EXTENSIONS := true
+
 # Display
 TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
