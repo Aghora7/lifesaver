@@ -1,6 +1,6 @@
 [
  {
-   "repository": "android_kernel_xiaomi_onclite",
-   "target_path": "kernel/xiaomi/onclite"
+   "repository": "android_kernel_xiaomi_olivewood",
+   "target_path": "kernel/xiaomi/olivewood"
  }
 ]

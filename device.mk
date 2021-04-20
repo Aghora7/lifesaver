@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
+$(call inherit-product, vendor/xiaomi/olives/olives-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -250,7 +250,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.onclite
+    android.hardware.light@2.0-service.olives
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -316,7 +316,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.msm.usb.configfs.rc \
-    init.onclite.rc \
+    init.olivewood.rc \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \

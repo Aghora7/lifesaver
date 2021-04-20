@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/onclite
+DEVICE_PATH := device/xiaomi/olives
 
 # Architecture
 TARGET_ARCH := arm64
@@ -51,8 +51,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/onclite
-TARGET_KERNEL_CONFIG := onclite-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm439
+TARGET_KERNEL_CONFIG := olive-perf_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_CLANG_COMPILE := true
@@ -62,7 +62,7 @@ TARGET_KERNEL_VERSION := 4.9
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := onclite,onc
+TARGET_OTA_ASSERT_DEVICE := olivewood,olivelite,olives
 
 # Audio
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
@@ -122,9 +122,9 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
-#FM
-BOARD_HAVE_QCOM_FM := true
-TARGET_QCOM_NO_FM_FIRMWARE := true
+#we dont need FM ig for now
+#BOARD_HAVE_QCOM_FM := true
+#TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
@@ -195,4 +195,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/onclite/BoardConfigVendor.mk
+-include vendor/xiaomi/olives/BoardConfigVendor.mk
