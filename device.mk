@@ -337,6 +337,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Properties
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+-include $(LOCAL_PATH)/product_prop.mk
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
