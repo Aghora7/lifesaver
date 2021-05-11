@@ -132,6 +132,10 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     Snap
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-service
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=4m \
